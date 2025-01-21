@@ -14,6 +14,18 @@
 /backend/pharmacy-service/node_modules
 /backend/prescription-service/node_modules
 
+/backend/api-gateway/.env
+/backend/api-gateway/.env.*
+/backend/auth-service/.env
+/backend/auth-service/.env.*
+/backend/notification-service/.env
+/backend/notification-service/.env.*
+/backend/pharmacy-service/.env
+/backend/pharmacy-service/.env.*
+/backend/prescription-service/.env
+/backend/prescription-service/.env.*
+
+
 npm-debug.log
 yarn-error.log
 
