@@ -18,11 +18,11 @@ Microservices allow for better scalability and separation of concerns. Each serv
 ---
 ## 📌 Outstanding Technical Properties?
 
-✅ **Proper Data Flow:** Fetches from MongoDB when Redis cache is empty.
-✅ **Performance Optimization:** Uses Redis caching for faster responses.
-✅ **Scalability:** Modular MVC structure allows easy future enhancements.
-✅ **Security:** API key validation and JWT authentication.
-✅ **Resiliency:** Ensures data consistency across microservices.
+✅ **Proper Data Flow:** Fetches from MongoDB when Redis cache is empty.  
+✅ **Performance Optimization:** Uses Redis caching for faster responses.  
+✅ **Scalability:** Modular MVC structure allows easy future enhancements.  
+✅ **Security:** API key validation and JWT authentication.  
+✅ **Resiliency:** Ensures data consistency across microservices.  
 
 ---
 ## Technologies Used  
