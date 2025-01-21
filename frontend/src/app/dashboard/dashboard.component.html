@@ -1,0 +1,53 @@
+<div class="container mt-4">
+    <h2 class="text-center">Dashboard</h2>
+    
+    <div *ngIf="loading" class="text-center">
+      <div class="spinner-border text-primary"></div>
+      <p>Loading dashboard data...</p>
+    </div>
+  
+    <div *ngIf="!loading" class="row">
+        <div class="">
+            <p>Welcome, {{ user.name }}  |
+            Email: {{ user.email }} |
+            Role: {{ user.role }}</p>
+          </div>
+          
+      <div class="col-md-3">
+        <div class="card text-white bg-primary mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Total Prescriptions</h5>
+            <p class="card-text display-4">{{ totalPrescriptions }}</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card text-white bg-success mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Total Pharmacies</h5>
+            <p class="card-text display-4">{{ totalPharmacies }}</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card text-white bg-warning mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Total Doctors</h5>
+            <p class="card-text display-4">{{ totalDoctors }}</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card text-white bg-danger mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Total Patients</h5>
+            <p class="card-text display-4">{{ totalPatients }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

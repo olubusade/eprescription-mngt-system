@@ -1,0 +1,20 @@
+<div class="container mt-4">
+    <h1>Create New Prescription</h1>
+  
+    <div *ngIf="errorMessage" class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+  
+    <div *ngIf="successMessage" class="alert alert-success">
+      {{ successMessage }}
+    </div>
+  
+    <div class="form-group">
+      <label for="prescriptionDetails">Prescription Details</label>
+      <textarea id="prescriptionDetails" [(ngModel)]="prescriptionDetails" rows="4" class="form-control" placeholder="Enter prescription details"></textarea>
+    </div>
+  
+    <button (click)="createPrescription()" class="btn btn-primary mt-3">Create Prescription</button>
+    <a routerLink="/prescriptions" class="btn btn-link mt-3">Back to Prescriptions</a>
+  </div>
+  

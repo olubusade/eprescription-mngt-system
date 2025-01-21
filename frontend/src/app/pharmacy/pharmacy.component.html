@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Pharmacy Orders</h1>
+    <ul class="list-group">
+      <li *ngFor="let order of orders" class="list-group-item">
+        {{ order.details }}
+        <button (click)="processOrder(order._id)" class="btn btn-success float-right">Process Order</button>
+      </li>
+    </ul>
+  </div>
+  

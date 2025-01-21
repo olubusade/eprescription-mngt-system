@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Prescriptions</h1>
+    <ul class="list-group">
+      <li *ngFor="let prescription of prescriptions" class="list-group-item">
+        {{ prescription.details }}
+      </li>
+    </ul>
+  
+    <hr>
+  
+    <h2>Create New Prescription</h2>
+    <textarea [(ngModel)]="newPrescription" rows="4" class="form-control" placeholder="Enter prescription details"></textarea>
+    <button (click)="createPrescription()" class="btn btn-primary mt-2">Create Prescription</button>
+  </div>
+  

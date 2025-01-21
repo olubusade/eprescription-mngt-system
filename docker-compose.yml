@@ -1,0 +1,41 @@
+version: "3.9"
+services:
+  api-gateway:
+    build: ./backend/api-gateway
+    ports:
+      - "5000:5000"
+    depends_on:
+      - auth-service
+      - prescription-service
+      - pharmacy-service
+      - notification-service
+  auth-service:
+    build: ./backend/auth-service
+    ports:
+      - "5001:5001"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/auth
+  prescription-service:
+    build: ./backend/prescription-service
+    ports:
+      - "5002:5002"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/prescriptions
+  pharmacy-service:
+    build: ./backend/pharmacy-service
+    ports:
+      - "5003:5003"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/pharmacy
+  notification-service:
+    build: ./backend/notification-service
+    ports:
+      - "5004:5004"
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
