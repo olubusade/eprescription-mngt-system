@@ -15,6 +15,16 @@ Microservices allow for better scalability and separation of concerns. Each serv
 - **Flexibility:** Different services can use different technologies if needed.  
 - **Improved Security:** Role-based access is enforced at the service level.  
 
+---
+## **📌 Outstanding Technical Properties?**  
+✅ **Proper Data Flow** – Fetches from MongoDB when Redis cache is empty.
+✅ **Performance Optimization** – Uses Redis caching for faster responses.
+✅ **Scalability** – Modular MVC structure allows easy future enhancements.
+✅ **Security** – API key validation and JWT authentication.
+✅ **Resiliency** – Ensures data consistency across microservices.
+---
+
+
 ## Technologies Used  
 
 ### **Frontend (Angular)**  
@@ -191,16 +201,6 @@ http://localhost:4200
 - **MongoDB Database** is hosted online with access restrictions.  
 
 ---
-
-📌 **Outstanding Technical Properties?**  
-✅ Proper Data Flow – Fetches from MongoDB when Redis cache is empty.
-✅ Performance Optimization – Uses Redis caching for faster responses.
-✅ Scalability – Modular MVC structure allows easy future enhancements.
-✅ Security – API key validation and JWT authentication.
-✅ Resiliency – Ensures data consistency across microservices.
----
-
-This README provides comprehensive information for new users to set up, install Redis, run microservices, and understand the project structure. Let me know if you need any modifications! 🚀
 
 ## **🔐 Authentication & Security**
 ✔️ **JWT Tokens** - Secure authentication mechanism  
