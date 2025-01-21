@@ -35,4 +35,5 @@ const loginUser = async (email, password) => {
     return { token: generateToken(user), user };
 };
 
+
 module.exports = { registerUser, loginUser };
